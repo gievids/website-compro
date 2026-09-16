@@ -10,12 +10,12 @@ const PAGES = [
 ];
 
 const SOLUTIONS = [
-  "Internet Service & IP Core",
-  "Network Infrastructure",
-  "SD-WAN",
-  "Managed Services",
-  "VoIP",
-  "VPS",
+  "Internet Service & IP Core Networks",
+  "Network Infrastructure Service",
+  "SD-WAN Service",
+  "Maintenance & Managed Service",
+  "VoIP Infrastructure Service",
+  "Virtual Private Server Service",
 ];
 
 export default function Footer() {

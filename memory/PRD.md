@@ -29,7 +29,7 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section
 - About page with real company timeline (2006 founding → 2011 ISP license → 2024 Jartaplok license → Present) and values grid
 - Contact form → MongoDB + email notification (verified end-to-end, toast confirmation)
-- SEO title/meta per brief; no invented statistics anywhere
+- SEO title/meta per brief; no invented statistics anywhere (99.5% SLA on Internet Service is company-provided/verified)
 
 ## Backlog
 - P1: Industries page; Case Studies

@@ -4,11 +4,12 @@ export const SOLUTIONS = [
   {
     slug: "internet-ip-core",
     icon: Globe,
-    title: "Internet Service & IP Core Network",
-    short: "Reliable internet connectivity supported by high-availability network architecture.",
+    title: "Internet Service & IP Core Networks",
+    short: "High-availability internet service with a 99.5% SLA, multiple fiber optic links, and multiple upstream providers.",
     overview:
-      "Dedicated, enterprise-grade internet connectivity built on a resilient IP core network. Designed for organisations where connectivity is business-critical, not a commodity.",
+      "High-availability internet service with a 99.5% Service Level Agreement (SLA), supported by multiple fiber optic links and multiple upstream providers to ensure optimal performance, reliability, and service continuity.",
     features: [
+      "99.5% Service Level Agreement",
       "Dedicated Internet",
       "Enterprise Connectivity",
       "High Availability",
@@ -26,10 +27,10 @@ export const SOLUTIONS = [
   {
     slug: "network-infrastructure",
     icon: Network,
-    title: "Network Infrastructure",
-    short: "Network design, deployment, configuration, optimization, and maintenance.",
+    title: "Network Infrastructure Service",
+    short: "End-to-end design, deployment, configuration, and maintenance of reliable, scalable network systems.",
     overview:
-      "End-to-end network infrastructure services — from initial design through deployment and ongoing optimization — delivered by experienced network engineers.",
+      "End-to-end network infrastructure services covering design, deployment, configuration, and maintenance of reliable and scalable network systems.",
     features: [
       "Network Design",
       "Network Deployment",
@@ -47,10 +48,10 @@ export const SOLUTIONS = [
   {
     slug: "sd-wan",
     icon: Workflow,
-    title: "SD-WAN",
-    short: "Flexible WAN connectivity designed for multi-location businesses.",
+    title: "SD-WAN Service",
+    short: "Secure, efficient, and centralized connectivity across multiple business locations.",
     overview:
-      "Software-defined WAN that connects branches, offices, data centers, and cloud environments under one centrally managed architecture.",
+      "Providing SD-WAN solutions that enable secure, efficient, and centralized connectivity across multiple business locations, enhancing application performance and network reliability.",
     features: [
       "Multi-location Connectivity",
       "Centralized Management",
@@ -67,12 +68,13 @@ export const SOLUTIONS = [
   {
     slug: "managed-services",
     icon: Headset,
-    title: "Managed Services",
-    short: "24/7 monitoring, technical support, and proactive network maintenance.",
+    title: "Maintenance & Managed Service",
+    short: "End-to-end maintenance and managed services with 24/7 monitoring, fault management, and technical support.",
     overview:
-      "Continuous monitoring and management of your network environment, so issues are identified and handled before they become disruptions.",
+      "Integrated internet and managed services are delivered as a complete solution, offering end-to-end maintenance and managed services, including 24/7 network monitoring, fault management, and technical support to ensure continuous and optimal network operations.",
     features: [
       "24/7 Monitoring",
+      "Fault Management",
       "Incident Management",
       "Technical Support",
       "Network Maintenance",
@@ -87,10 +89,10 @@ export const SOLUTIONS = [
   {
     slug: "voip",
     icon: PhoneCall,
-    title: "VoIP",
-    short: "IP-based voice infrastructure for business communication and contact center environments.",
+    title: "VoIP Infrastructure Service",
+    short: "Cost-effective, scalable IP-based voice infrastructure for enterprise communication.",
     overview:
-      "Business voice connectivity over IP infrastructure — built for clarity, reliability, and integration with modern communication workflows, including contact center environments.",
+      "Delivering IP-based voice communication infrastructure solutions that are cost-effective, scalable, and designed to support enterprise communication needs.",
     features: [
       "IP-based Voice Infrastructure",
       "Business Communication",
@@ -106,10 +108,10 @@ export const SOLUTIONS = [
   {
     slug: "vps",
     icon: Server,
-    title: "VPS",
-    short: "Flexible virtual private server infrastructure for applications and workloads.",
+    title: "Virtual Private Server Service",
+    short: "Scalable and secure VPS solutions for business applications with high performance and reliability.",
     overview:
-      "Virtual private server infrastructure for business applications and workloads, connected directly to a network built for low-latency, reliable access.",
+      "Scalable and secure Virtual Private Server (VPS) solutions designed to support business applications with high performance, flexibility, and reliability.",
     features: [
       "Virtual Private Servers",
       "Flexible Configurations",
