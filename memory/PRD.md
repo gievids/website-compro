@@ -26,13 +26,13 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 - Kinetic hero: masked line reveal, animated SVG network topology (SMIL packet pulses), scroll parallax, highlight strip
 - Editorial marquee, numbered manifesto chapters, dark "Service is a Promise." signature section
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section
-- About page with placeholder timeline (marked "Placeholder — to be confirmed") and values grid
+- About page with real company timeline (2006 founding → 2011 ISP license → 2024 Jartaplok license → Present) and values grid
 - Contact form → MongoDB + email notification (verified end-to-end, toast confirmation)
 - SEO title/meta per brief; no invented statistics anywhere
 
 ## Backlog
 - P0: Replace INQUIRY_NOTIFY_EMAIL with Cergis's real inbox; fill in real office address/email/phone/WhatsApp/hours placeholders
-- P1: Verified company facts (timeline dates, stats) once provided; Industries page; Case Studies
+- P1: Industries page; Case Studies
 - P2: Insights/Blog, Customer Portal, CMS, Careers, Knowledge Center (Phase 2 per brief)
 
 ## Next Tasks

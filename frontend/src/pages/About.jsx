@@ -2,12 +2,15 @@ import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal"
 import CTASection from "@/components/CTASection";
 
 const MILESTONES = [
-  { title: "Company Establishment", note: "Cergis Networks is founded in Indonesia." },
-  { title: "ISP Development", note: "Internet service capabilities are built and launched." },
-  { title: "Network Expansion", note: "Fiber and core network infrastructure grow to serve more businesses." },
-  { title: "Enterprise Service Development", note: "The portfolio expands toward enterprise connectivity and managed services." },
-  { title: "Infrastructure Development", note: "Continued investment in redundancy, monitoring, and operations." },
-  { title: "Current Business Direction", note: "An enterprise connectivity and technology partner for a digital Indonesia." },
+  { year: "2006", title: "Company Established", note: "Cergis Networks is founded in Indonesia." },
+  { year: "2011", title: "ISP License Obtained", note: "Official licenses as an Internet Service Provider are obtained." },
+  { year: "2012", title: "Team Strengthened", note: "The company grows with a highly experienced team." },
+  { year: "2013", title: "Dedicated Internet & Managed Connectivity", note: "Dedicated internet and managed connectivity services are introduced to enhance service reliability and performance." },
+  { year: "2015", title: "Infrastructure Strengthened", note: "Backbone and last-mile infrastructure are strengthened to improve network stability and service coverage." },
+  { year: "2017", title: "Enterprise Solutions Expanded", note: "The service portfolio expands to include customized network solutions for enterprise and business clients." },
+  { year: "2019", title: "Capacity Enhanced", note: "Infrastructure capacity is enhanced to support increasing demand for high-speed and stable internet services." },
+  { year: "2024", title: "Packet Switched License (Jartaplok)", note: "Official licenses as a Packet Switched (Jartaplok) provider are obtained." },
+  { year: "Present", title: "Continuously Innovating", note: "Expanding infrastructure to support Indonesia's growing digital ecosystem, serving as a trusted connectivity partner for businesses nationwide." },
 ];
 
 const APPROACH = [
@@ -66,7 +69,7 @@ export default function About() {
           <SectionHeader
             eyebrow="Milestones"
             title="The Road So Far."
-            description="Key stages in the development of Cergis Networks. Dates and details are being verified and will be published once confirmed."
+            description="Key stages in the development of Cergis Networks — from establishment to a licensed, enterprise-focused connectivity partner."
           />
           <div className="mt-16 grid gap-x-10 md:grid-cols-2 lg:grid-cols-3">
             {MILESTONES.map((m, i) => (
@@ -75,16 +78,13 @@ export default function About() {
                   data-testid={`timeline-item-${i}`}
                   className="group border-t-2 border-slate-200 py-7 transition-colors duration-300 hover:border-[#F97316]"
                 >
-                  <span className="font-mono text-xs font-semibold text-orange-600">
-                    0{i + 1}
+                  <span className="font-mono text-sm font-bold tracking-wider text-orange-600">
+                    {m.year}
                   </span>
                   <h3 className="mt-3 font-display text-lg font-semibold tracking-tight text-slate-900">
                     {m.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-600">{m.note}</p>
-                  <span className="mt-4 inline-block border border-dashed border-orange-300 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.2em] text-orange-600">
-                    Placeholder — to be confirmed
-                  </span>
                 </div>
               </Reveal>
             ))}
