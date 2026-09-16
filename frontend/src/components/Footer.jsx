@@ -76,19 +76,18 @@ export default function Footer() {
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500">Contact</p>
           <ul className="mt-5 space-y-3 text-sm text-slate-300">
-            <li>Jakarta, Indonesia</li>
+            <li>The Bellezza Shopping Arcade, Permata Hijau — Jakarta</li>
             <li>
-              Office address{" "}
-              <span className="font-mono text-[10px] uppercase tracking-wider text-orange-500">
-                [To be confirmed]
-              </span>
+              <a href="mailto:info@cergis.net.id" className="transition-colors hover:text-[#F97316]">
+                info@cergis.net.id
+              </a>
             </li>
             <li>
-              Email &amp; phone{" "}
-              <span className="font-mono text-[10px] uppercase tracking-wider text-orange-500">
-                [To be confirmed]
-              </span>
+              <a href="tel:+622125675858" className="transition-colors hover:text-[#F97316]">
+                021 2567 5858
+              </a>
             </li>
+            <li>Mon – Fri, 08.00 – 18.00 WIB</li>
           </ul>
           <Link
             to="/contact"

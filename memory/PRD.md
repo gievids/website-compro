@@ -19,7 +19,8 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
   - POST /api/inquiries — validate, store in `inquiries` collection, send notification email
   - GET /api/inquiries — list (for later export/admin)
   - Email: Emergent managed email proxy (httpx), guardrail gate `_assert_safe_email` on every send
-- Env (backend/.env): EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME="Cergis Networks", INQUIRY_NOTIFY_EMAIL (currently test sink delivered@resend.dev — REPLACE with real company inbox)
+- Env (backend/.env): EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME="Cergis Networks", INQUIRY_NOTIFY_EMAIL="info@cergis.net.id" (live)
+- Real contact details live sitewide: The Bellezza Shopping Arcade, Permata Hijau — Jakarta; info@cergis.net.id; 021 2567 5858; WhatsApp 0822 9960 1565; Mon–Fri 08.00–18.00 WIB
 
 ## Implemented (2026-09-16)
 - All 5 pages, fully responsive, sticky glass navbar + mobile full-screen menu
@@ -31,11 +32,10 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 - SEO title/meta per brief; no invented statistics anywhere
 
 ## Backlog
-- P0: Replace INQUIRY_NOTIFY_EMAIL with Cergis's real inbox; fill in real office address/email/phone/WhatsApp/hours placeholders
 - P1: Industries page; Case Studies
 - P2: Insights/Blog, Customer Portal, CMS, Careers, Knowledge Center (Phase 2 per brief)
 
 ## Next Tasks
-1. Collect real contact details + notification inbox from user
-2. Add /api/inquiries admin view or export once real content lands
-3. Industries / Case Studies pages
+1. Industries / Case Studies pages (Phase 2)
+2. Add /api/inquiries admin view or export
+3. Insights/Blog, Customer Portal, CMS (Phase 2)

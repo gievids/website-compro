@@ -30,11 +30,11 @@ const EMPTY = {
 };
 
 const INFO = [
-  { icon: MapPin, label: "Office Address" },
-  { icon: Mail, label: "Email" },
-  { icon: Phone, label: "Phone" },
-  { icon: MessageCircle, label: "WhatsApp" },
-  { icon: Clock, label: "Business Hours" },
+  { icon: MapPin, label: "Office Address", value: "The Bellezza Shopping Arcade, Permata Hijau — Jakarta" },
+  { icon: Mail, label: "Email", value: "info@cergis.net.id", href: "mailto:info@cergis.net.id" },
+  { icon: Phone, label: "Phone", value: "021 2567 5858", href: "tel:+622125675858" },
+  { icon: MessageCircle, label: "WhatsApp", value: "0822 9960 1565", href: "https://wa.me/6282299601565" },
+  { icon: Clock, label: "Business Hours", value: "Monday – Friday, 08.00 – 18.00 WIB" },
 ];
 
 const inputCls =
@@ -101,9 +101,17 @@ export default function Contact() {
                         <p className="font-display text-sm font-semibold text-slate-900">
                           {item.label}
                         </p>
-                        <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-orange-600">
-                          [To be confirmed]
-                        </p>
+                        {item.href ? (
+                          <a
+                            href={item.href}
+                            data-testid={`contact-info-link-${item.label.toLowerCase().replace(/\s/g, "-")}`}
+                            className="mt-1 inline-block text-sm text-slate-600 transition-colors hover:text-orange-600"
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          <p className="mt-1 text-sm text-slate-600">{item.value}</p>
+                        )}
                       </div>
                     </div>
                   ))}
