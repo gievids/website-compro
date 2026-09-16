@@ -1,0 +1,112 @@
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
+
+const PAGES = [
+  { to: "/", label: "Home" },
+  { to: "/solutions", label: "Solutions" },
+  { to: "/network", label: "Network" },
+  { to: "/about", label: "About Us" },
+  { to: "/contact", label: "Contact" },
+];
+
+const SOLUTIONS = [
+  "Internet Service & IP Core",
+  "Network Infrastructure",
+  "SD-WAN",
+  "Managed Services",
+  "VoIP",
+  "VPS",
+];
+
+export default function Footer() {
+  return (
+    <footer data-testid="main-footer" className="bg-[#0B132B] text-white">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
+        <div>
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-8 w-8 items-center justify-center bg-[#F97316] font-display text-sm font-extrabold text-white">
+              C
+            </span>
+            <span className="font-display text-lg font-extrabold tracking-tight">
+              CERGIS<span className="text-[#F97316]">.</span>
+            </span>
+          </div>
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
+            Enterprise internet connectivity and network infrastructure for
+            businesses across Indonesia.
+          </p>
+          <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-orange-500">
+            Service is a Promise.
+          </p>
+        </div>
+
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500">Pages</p>
+          <ul className="mt-5 space-y-3">
+            {PAGES.map((p) => (
+              <li key={p.to}>
+                <Link
+                  to={p.to}
+                  data-testid={`footer-link-${p.label.toLowerCase().replace(/\s/g, "-")}`}
+                  className="text-sm text-slate-300 transition-colors hover:text-[#F97316]"
+                >
+                  {p.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500">Solutions</p>
+          <ul className="mt-5 space-y-3">
+            {SOLUTIONS.map((s) => (
+              <li key={s}>
+                <Link
+                  to="/solutions"
+                  className="text-sm text-slate-300 transition-colors hover:text-[#F97316]"
+                >
+                  {s}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500">Contact</p>
+          <ul className="mt-5 space-y-3 text-sm text-slate-300">
+            <li>Jakarta, Indonesia</li>
+            <li>
+              Office address{" "}
+              <span className="font-mono text-[10px] uppercase tracking-wider text-orange-500">
+                [To be confirmed]
+              </span>
+            </li>
+            <li>
+              Email &amp; phone{" "}
+              <span className="font-mono text-[10px] uppercase tracking-wider text-orange-500">
+                [To be confirmed]
+              </span>
+            </li>
+          </ul>
+          <Link
+            to="/contact"
+            data-testid="footer-cta-talk"
+            className="group mt-6 inline-flex items-center gap-1.5 border border-white/20 px-5 py-2.5 text-sm font-semibold transition-colors duration-300 hover:border-[#F97316] hover:bg-[#F97316]"
+          >
+            Talk to Our Team
+            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-6 py-6 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-500 sm:flex-row sm:items-center lg:px-12">
+          <span>© 2026 Cergis Networks</span>
+          <span>Connectivity That Moves Business</span>
+        </div>
+      </div>
+    </footer>
+  );
+}

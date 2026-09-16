@@ -1,0 +1,114 @@
+{
+  "project_name": "Cergis Networks Website Redesign",
+  "app_type": "corporate marketing website (5 pages: Home, Solutions, Network, About Us, Contact)",
+  "tech_stack": {
+    "framework": "React.js (JavaScript - .js/.jsx files)",
+    "styling": "Tailwind CSS + Custom CSS Variables",
+    "animation_libraries": ["framer-motion", "@studio-freight/lenis", "lucide-react"],
+    "backend_integration": "FastAPI + MongoDB"
+  },
+  "brand_identity": {
+    "company_name": "Cergis Networks",
+    "positioning": "Indonesian Enterprise Network Infrastructure & B2B Connectivity Partner",
+    "tagline": "Connectivity That Moves Business",
+    "core_promise": "Service is a Promise",
+    "tone": ["Reliable", "Professional", "Secure", "Flexible", "Scalable", "Enterprise-Focused", "Technology-Driven"],
+    "forbidden": ["Do not style like a cheap residential ISP", "Do not invent fake specs or fake customer stats", "No generic transparent sticky headers without blur background"]
+  },
+  "color_palette": {
+    "theme_type": "Lighter Corporate (Crisp White/Slate with Deep Navy Structure and High-Energy Indonesian Tech Orange)",
+    "background_main": "#FAFAFC",
+    "background_card": "#FFFFFF",
+    "background_alt": "#F1F5F9",
+    "background_dark_section": "#0B132B",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_muted": "#64748B",
+    "text_on_dark": "#F8FAFC",
+    "navy_deep": "#0B132B",
+    "navy_surface": "#1E293B",
+    "orange_accent": "#F97316",
+    "orange_glow": "rgba(249, 115, 22, 0.15)",
+    "orange_bright": "#FF5722",
+    "border_subtle": "#E2E8F0",
+    "border_dark": "#1E293B",
+    "status_online": "#10B981"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "Inter, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none",
+      "h2_section": "text-3xl sm:text-4xl font-bold tracking-tight text-slate-900",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-tight text-slate-900",
+      "body_lead": "text-lg sm:text-xl text-slate-600 leading-relaxed",
+      "body_regular": "text-base text-slate-600 leading-relaxed",
+      "eyebrow_label": "text-xs font-mono uppercase tracking-[0.25em] text-orange-600 font-bold"
+    }
+  },
+  "visual_enhancers": {
+    "tracing_beam": "1px orange glow borders on featured active network cards",
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-slate-200/80 shadow-sm for header and floating cards",
+    "grid_borders": "Subtle 1px border grid pattern (#E2E8F0) with exposed node points for technical aesthetic",
+    "motion_style": "Framer Motion staggered line-by-line reveal, smooth momentum scroll via Lenis, interactive topology canvas with pulsing data packets"
+  },
+  "key_pages_and_sections": {
+    "Home": [
+      "Kinetic Hero: Animated interactive network visualization (Internet → Upstream Providers → Cergis Core Network → Fiber → Enterprise Customer → Branch/Office/Cloud) with real-time speed/ping simulation widget",
+      "Company Highlights & Metrics: 99.99% SLA Uptime Guarantee, Multi-Gigabit Metro Ethernet, Tier-3 Data Center Interconnects, 24/7/365 Local NOC Support",
+      "6 Core Solution Cards Grid: (1) Internet Service & IP Core, (2) Network Infrastructure, (3) SD-WAN, (4) Managed Services, (5) VoIP Enterprise, (6) VPS & Private Cloud",
+      "Why Cergis Matrix: Highlighting Flexibility, Redundancy, Local Expertise, and SLA Guarantees",
+      "Dark Signature Brand Section: 'Service is a Promise' featuring glowing fiber line animations and manifesto points",
+      "Final High-Impact CTA Banner: 'Elevate Your Corporate Connectivity'"
+    ],
+    "Solutions": [
+      "Interactive Solution Switcher & Filter",
+      "Detailed Breakdown for all 6 core services (Overview, Key Features, Architectural Benefits, Enterprise Use Cases)",
+      "Bandwidth & Capacity Configurator / Solution Request Modal"
+    ],
+    "Network": [
+      "Interactive Conceptual Architecture Diagram: Interactive node graph with clickable layers (Upstream Providers, Cergis Core, Redundant Routing, Fiber Backbone, Enterprise Customers)",
+      "Live Network Status & NOC Telemetry Dashboard simulation (Latency metrics, POP locations, Fiber route redundancy)",
+      "NOC Operations Spotlight: 24/7 Monitoring, Proactive Incident Mitigation, Field Engineering Readiness"
+    ],
+    "About Us": [
+      "Corporate Story: Powering Indonesia's Enterprise Economy",
+      "Interactive Timeline / Milestone Map: Cergis Infrastructure Evolution",
+      "'Our Approach' Values Grid: Customer-Centricity, Technical Rigor, Uncompromised Reliability, Future-Proof Flexibility",
+      "Leadership & Engineering Team Spotlight"
+    ],
+    "Contact": [
+      "Enterprise Inquiry Form: Name, Company Name, Business Email, Phone, Industry, Required Service, Number of Locations, Detailed Message",
+      "Interactive Map / Office Locations (Jakarta HQ & Data Center Hubs)",
+      "Direct NOC Hotline & Technical Support escalation path"
+    ]
+  },
+  "image_urls": {
+    "datacenter_server_rack": "https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxlbnRlcnByaXNlJTIwbmV0d29yayUyMHNlcnZlciUyMGRhdGFjZW50ZXIlMjBmaWJlciUyMG9wdGljc3xlbnwwfHx8fDE3ODk1NDk4MDR8MA&ixlib=rb-4.1.0&q=85",
+    "fiber_optic_patch": "https://images.pexels.com/photos/37564550/pexels-photo-37564550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "network_blue_cables": "https://images.unsplash.com/photo-1683322499436-f4383dd59f5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHxfhnxlbnRlcnByaXNlJTIwbmV0d29yayUyMHNlcnZlciUyMGRhdGFjZW50ZXIlMjBmaWJlciUyMG9wdGljc3xlbnwwfHx8fDE3ODk1NDk4MDR8MA&ixlib=rb-4.1.0&q=85",
+    "jakarta_skyline_corporate": "https://images.pexels.com/photos/14524309/pexels-photo-14524309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "corporate_meeting_engineers": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBtZWV0aW5nJTIwZXhlY3V0aXZlJTIwdGVhbSUyMHRlY2glMjBlbmdpbmVlcnxlbnwwfHx8fDE3ODk1NDk4MTN8MA&ixlib=rb-4.1.0&q=85",
+    "tech_team_discussion": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "component_guidelines": {
+    "Navbar": "Sticky top bar with glassmorphism backdrop-blur-xl bg-white/80 border-b border-slate-200. Clear logo, 5 page links, data-testid attributes, and glowing orange CTA button 'Talk to Our Team'.",
+    "NetworkHeroVisualization": "Canvas/SVG interactive topology graph with glowing pulses moving through node clusters. Hover reveals latency, bandwidth status, and routing paths.",
+    "SolutionCards": "Clean white cards with hover translate-y-1 elevation, orange subtle border glow, custom vector/Lucide icons, and concise enterprise feature lists.",
+    "NetworkDiagram": "Step-by-step interactive pipeline card display with node filters (Core, Upstream, Fiber, Enterprise Edge, Cloud Peering).",
+    "ContactForm": "Full enterprise contact inquiry form with controlled inputs, field validation, interactive status alerts (sonner toast on submit), and clear data-testid tags."
+  },
+  "testing_and_accessibility": {
+    "data_testid_rule": "ALL interactive components, nav items, form inputs, buttons, filter tabs, and section toggles MUST include data-testid attributes (e.g. data-testid='nav-link-solutions', data-testid='contact-submit-button').",
+    "accessibility_rule": "Ensure minimum 4.5:1 text contrast. Primary CTAs must have dark or white high-contrast text. Interactive hover states must explicitly specify both background and text colors."
+  },
+  "instructions_to_main_agent": [
+    "Use Lenis for smooth momentum scrolling across all 5 pages.",
+    "Use Framer Motion for scroll reveals, staggered card entrances, and node pulse effects.",
+    "Ensure the sticky header does not obscure section content by using top padding pt-24 on main wrapper.",
+    "Implement Sonner toast notifications for all interactive actions like sending a contact message or requesting a quote.",
+    "Ensure full responsiveness across desktop, tablet, and mobile views with mobile hamburger drawer navigation.",
+    "Follow the exact user mandate: Light corporate palette (White/Slate background, Deep Navy text & structure, Indonesian Tech Orange accents) with a high-contrast dark signature 'Service is a Promise' section."
+  ]
+}
