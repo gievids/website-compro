@@ -37,9 +37,9 @@ const LAYERS = [
   },
   {
     id: "edge",
-    title: "Branch / Office / Data Center / Cloud",
-    desc: "From a single headquarters to distributed branches, data centers, and cloud environments — one network, every site.",
-    tags: ["Multi-site reach", "Cloud on-ramps"],
+    title: "Branch / Office",
+    desc: "From a single headquarters to distributed branches and offices — one network, every site.",
+    tags: ["Multi-site reach", "Consistent service at every location"],
   },
 ];
 
