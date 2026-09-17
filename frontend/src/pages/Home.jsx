@@ -27,7 +27,7 @@ const HERO_POINTS = [
 ];
 
 const HIGHLIGHTS = [
-  { icon: HeartHandshake, title: "Commitment to Customer Satisfaction", desc: "Focused on long-term partnerships by providing high-quality services. Customer feedback and service performance data are continuously evaluated to improve processes, service reliability, and overall customer satisfaction." },
+  { icon: HeartHandshake, title: "Commitment to Customer Satisfaction", desc: "Focused on long-term partnerships by providing high-quality services." },
   { icon: ShieldCheck, title: "High-Availability Network", desc: "Architecture built with redundancy at every layer." },
   { icon: GitBranch, title: "Multiple Upstream Providers", desc: "Diverse upstream paths so no single provider defines your service." },
   { icon: Radar, title: "24/7 Network Monitoring", desc: "Continuous monitoring with proactive incident handling." },
