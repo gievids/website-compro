@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 
 const PAGES = [
   { to: "/", label: "Home" },
@@ -24,8 +25,8 @@ export default function Footer() {
     <footer data-testid="main-footer" className="bg-[#0B132B] text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
         <div>
-          <div className="inline-flex items-center bg-white px-4 py-2.5">
-            <img src="/logo-cergis.webp" alt="Cergis Networks" className="h-10 w-auto" />
+          <div className="inline-flex items-center py-1">
+            <Logo variant="white" className="h-12" />
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
             Enterprise internet connectivity and network infrastructure for
