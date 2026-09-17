@@ -27,6 +27,7 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 - Kinetic hero: full-screen image carousel (4 client-provided photos) with crossfade + Ken Burns zoom, vertical progress indicators, navy gradient scrim, masked line reveal, scroll parallax, highlight strip
 - Editorial marquee, numbered manifesto chapters, dark "Service is a Promise." signature section
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section
+- Real company logo (LOGO CERGIS-BASIC-HD) in navbar, footer (white chip on navy), and favicon (hexagon icon crop); assets in /app/frontend/public/
 - Interactive FAQ accordion (8 company-provided Q&As) on the homepage before the final CTA and on the Contact page below the form
 - Industries page (/industries): intro copy + 11 sector cards (Banking & Trading, Mining, E-Commerce, IT Solution, Call Center, Software Development, Media & Entertainment, FMCG, F&B, Hospitality, Education Institution) + orange CTA card; added to navbar and footer
 - About page with real company timeline (2006 founding → 2011 ISP license → 2024 Jartaplok license → Present) and values grid

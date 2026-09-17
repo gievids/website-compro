@@ -24,16 +24,8 @@ export default function Navbar() {
       className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 lg:px-12">
-        <Link to="/" data-testid="nav-logo" className="group flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center bg-[#0B132B] font-display text-sm font-extrabold text-white transition-colors duration-300 group-hover:bg-[#F97316]">
-            C
-          </span>
-          <span className="font-display text-lg font-extrabold tracking-tight text-[#0B132B]">
-            CERGIS<span className="text-[#F97316]">.</span>
-            <span className="ml-1.5 hidden font-mono text-[9px] font-medium uppercase tracking-[0.3em] text-slate-400 sm:inline">
-              Networks
-            </span>
-          </span>
+        <Link to="/" data-testid="nav-logo" className="flex items-center">
+          <img src="/logo-cergis.webp" alt="Cergis Networks" className="h-11 w-auto md:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" data-testid="nav-desktop-menu">

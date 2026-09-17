@@ -24,13 +24,8 @@ export default function Footer() {
     <footer data-testid="main-footer" className="bg-[#0B132B] text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center bg-[#F97316] font-display text-sm font-extrabold text-white">
-              C
-            </span>
-            <span className="font-display text-lg font-extrabold tracking-tight">
-              CERGIS<span className="text-[#F97316]">.</span>
-            </span>
+          <div className="inline-flex items-center bg-white px-4 py-2.5">
+            <img src="/logo-cergis.webp" alt="Cergis Networks" className="h-10 w-auto" />
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
             Enterprise internet connectivity and network infrastructure for
