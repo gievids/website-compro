@@ -10,6 +10,7 @@ const HEADER_SLIDES = [
   {
     src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/w6a9hs29_portrait-beautiful-young-asian-business-woman-with-headphone-call-center.webp",
     alt: "Cergis customer support specialist ready to help",
+    pos: "center 15%",
   },
   {
     src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/1ceap9r4_paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline.webp",
@@ -77,34 +78,30 @@ export default function Contact() {
 
   return (
     <div data-testid="contact-page">
-      <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-28 lg:pt-40">
-          <div className="grid items-center gap-14 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <Reveal>
-                <Eyebrow>Contact</Eyebrow>
-              </Reveal>
-              <h1 className="mt-8 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                <MaskedLine delay={0.1}>Let's Build a</MaskedLine>
-                <MaskedLine delay={0.22}>
-                  <span className="text-[#F97316]">Better Connection.</span>
-                </MaskedLine>
-              </h1>
-              <Reveal delay={0.35}>
-                <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-                  Tell us about your connectivity and network requirements. Our team
-                  will respond with a solution shaped around your business.
-                </p>
-              </Reveal>
-            </div>
-            <div className="lg:col-span-5">
-              <Reveal delay={0.4}>
-                <HeroCarousel slides={HEADER_SLIDES} testId="contact-carousel" contained />
-              </Reveal>
-            </div>
-          </div>
+      <section className="relative overflow-hidden bg-[#0B132B]">
+        <HeroCarousel slides={HEADER_SLIDES} testId="contact-carousel" />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-48">
+          <Reveal>
+            <Eyebrow dark>Contact</Eyebrow>
+          </Reveal>
+          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <MaskedLine delay={0.1}>Let's Build a</MaskedLine>
+            <MaskedLine delay={0.22}>
+              <span className="text-[#F97316]">Better Connection.</span>
+            </MaskedLine>
+          </h1>
+          <Reveal delay={0.35}>
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+              Tell us about your connectivity and network requirements. Our team
+              will respond with a solution shaped around your business.
+            </p>
+          </Reveal>
+        </div>
+      </section>
 
-          <div className="mt-16 grid gap-14 lg:grid-cols-12">
+      <section className="bg-grid-light">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-12 lg:py-24">
+          <div className="grid gap-14 lg:grid-cols-12">
             {/* INFO */}
             <div className="lg:col-span-4">
               <Reveal delay={0.4}>

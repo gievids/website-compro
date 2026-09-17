@@ -104,6 +104,7 @@ export default function HeroCarousel({ slides = SLIDES, testId = "hero-carousel"
             src={slides[index].src}
             alt={slides[index].alt}
             className="h-full w-full object-cover"
+            style={{ objectPosition: slides[index].pos || "center" }}
             loading={index === 0 ? "eager" : "lazy"}
           />
         </motion.div>
