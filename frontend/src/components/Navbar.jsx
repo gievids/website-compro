@@ -13,26 +13,14 @@ const LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => setOpen(false), [pathname]);
 
   return (
     <header
       data-testid="main-navbar"
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300 ${
-        scrolled || open
-          ? "border-b border-slate-200 bg-white/85 backdrop-blur-xl"
-          : "border-b border-transparent bg-transparent"
-      }`}
+      className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 lg:px-12">
         <Link to="/" data-testid="nav-logo" className="group flex items-center gap-2.5">

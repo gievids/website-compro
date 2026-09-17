@@ -24,7 +24,7 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 
 ## Implemented (2026-09-16)
 - All 5 pages, fully responsive, sticky glass navbar + mobile full-screen menu
-- Kinetic hero: masked line reveal, editorial single-column layout, animated flowing network lines with breathing nodes and scroll parallax (topology diagram removed per user request), highlight strip
+- Kinetic hero: full-screen image carousel (4 client-provided photos) with crossfade + Ken Burns zoom, vertical progress indicators, navy gradient scrim, masked line reveal, scroll parallax, highlight strip
 - Editorial marquee, numbered manifesto chapters, dark "Service is a Promise." signature section
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section
 - About page with real company timeline (2006 founding → 2011 ISP license → 2024 Jartaplok license → Present) and values grid

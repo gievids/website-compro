@@ -11,6 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import Marquee from "@/components/Marquee";
 import CTASection from "@/components/CTASection";
 import SolutionCard from "@/components/SolutionCard";
@@ -55,32 +56,20 @@ export default function Home() {
   return (
     <div data-testid="home-page">
       {/* HERO */}
-      <section ref={heroRef} className="relative overflow-hidden bg-grid-light">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#FAFAFC] to-transparent" />
-        <motion.svg
-          style={{ y: bgY }}
-          className="pointer-events-none absolute inset-0 h-full w-full"
-          preserveAspectRatio="none"
-          viewBox="0 0 1440 700"
-          aria-hidden="true"
-        >
-          <path d="M -50 180 C 320 120, 760 260, 1500 150" fill="none" stroke="#F97316" strokeWidth="1" opacity="0.35" className="flow-line-slow" />
-          <path d="M -50 520 C 380 580, 820 460, 1500 560" fill="none" stroke="#F97316" strokeWidth="1" opacity="0.22" className="flow-line-slow" />
-          <path d="M -50 350 C 350 310, 800 410, 1500 330" fill="none" stroke="#CBD5E1" strokeWidth="1" opacity="0.8" className="flow-line-slow" />
-          <circle cx="1180" cy="180" r="4" fill="#F97316" className="node-breathe" />
-          <circle cx="240" cy="520" r="4" fill="#F97316" className="node-breathe" />
-          <circle cx="760" cy="330" r="3" fill="#94A3B8" className="node-breathe" />
-        </motion.svg>
-        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-36 lg:px-12 lg:pb-32 lg:pt-52">
+      <section ref={heroRef} className="relative overflow-hidden bg-[#0B132B]">
+        <motion.div style={{ y: bgY }} className="absolute inset-0">
+          <HeroCarousel />
+        </motion.div>
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-28 pt-36 lg:px-12 lg:pb-40 lg:pt-56">
           <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <Eyebrow>Enterprise ISP &amp; Network Infrastructure — Indonesia</Eyebrow>
+              <Eyebrow dark>Enterprise ISP &amp; Network Infrastructure — Indonesia</Eyebrow>
             </motion.div>
-            <h1 className="mt-8 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-8 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
               <MaskedLine delay={0.12}>Connectivity That</MaskedLine>
               <MaskedLine delay={0.26}>
                 <span className="text-[#F97316]">Moves Business.</span>
@@ -90,7 +79,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-7 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg"
+              className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
             >
               Reliable internet connectivity and network infrastructure designed to
               keep your business connected, secure, and moving forward.
@@ -112,7 +101,7 @@ export default function Home() {
               <Link
                 to="/solutions"
                 data-testid="hero-cta-solutions"
-                className="group inline-flex items-center gap-2 border border-slate-300 px-7 py-3.5 font-display text-base font-bold text-[#0B132B] transition-colors duration-300 hover:border-[#0B132B]"
+                className="group inline-flex items-center gap-2 border border-white/40 px-7 py-3.5 font-display text-base font-bold text-white transition-colors duration-300 hover:border-white hover:bg-white/5"
               >
                 Explore Solutions
                 <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -120,7 +109,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-        <div className="relative border-t border-slate-200 bg-white/70 backdrop-blur">
+        <div className="relative z-10 border-t border-slate-200 bg-white">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-10 gap-y-3 px-6 py-5 lg:px-12">
             {HERO_POINTS.map((p) => (
               <span
