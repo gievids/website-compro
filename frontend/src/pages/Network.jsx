@@ -188,27 +188,25 @@ export default function Network() {
       <section className="relative overflow-hidden bg-[#0B132B] py-28 text-white lg:py-32">
         <div className="absolute inset-0 bg-grid-dark" />
         <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
-          <div className="grid items-end gap-12 lg:grid-cols-2">
-            <SectionHeader
-              dark
-              eyebrow="Network Operations"
-              title="Always Connected. Always Monitored."
-              description="Our network infrastructure is continuously monitored to identify performance issues and potential service disruptions — before your business feels them."
-            />
-            <Reveal delay={0.2}>
-              <div className="relative overflow-hidden border border-white/10">
-                <img
-                  src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxlbnRlcnByaXNlJTIwbmV0d29yayUyMHNlcnZlciUyMGRhdGFjZW50ZXIlMjBmaWJlciUyMG9wdGljc3xlbnwwfHx8fDE3ODk1NDk4MDR8MA&ixlib=rb-4.1.0&q=85"
-                  alt="Data center infrastructure"
-                  loading="lazy"
-                  className="h-64 w-full object-cover transition-transform duration-700 hover:scale-105"
-                />
-                <span className="absolute bottom-3 left-3 bg-[#0B132B]/85 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-orange-500 backdrop-blur">
-                  Network Operations
-                </span>
-              </div>
-            </Reveal>
-          </div>
+          <SectionHeader
+            dark
+            eyebrow="Network Operations"
+            title="Always Connected. Always Monitored."
+            description="Our network infrastructure is continuously monitored to identify performance issues and potential service disruptions — before your business feels them."
+          />
+          <Reveal delay={0.2}>
+            <div className="relative mt-14 overflow-hidden border border-white/10">
+              <img
+                src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxlbnRlcnByaXNlJTIwbmV0d29yayUyMHNlcnZlciUyMGRhdGFjZW50ZXIlMjBmaWJlciUyMG9wdGljc3xlbnwwfHx8fDE3ODk1NDk4MDR8MA&ixlib=rb-4.1.0&q=85"
+                alt="Data center infrastructure"
+                loading="lazy"
+                className="h-64 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-80 lg:h-96"
+              />
+              <span className="absolute bottom-3 left-3 bg-[#0B132B]/85 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-orange-500 backdrop-blur">
+                Network Operations
+              </span>
+            </div>
+          </Reveal>
           <div className="mt-16 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
             {NOC.map((n, i) => (
               <Reveal key={n.title} delay={i * 0.06} className="h-full">
