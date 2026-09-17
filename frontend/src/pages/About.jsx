@@ -1,5 +1,17 @@
 import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import CTASection from "@/components/CTASection";
+
+const HEADER_SLIDES = [
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/lnjry0xf_business-colleagues-rooftop-talking.webp",
+    alt: "Business team in silhouette against the city skyline",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/i79m2h5x_image-confident-asian-woman-smiling-extend-hand-handshake-greeting-gesture-saying-hello-standing-white-background.webp",
+    alt: "A warm handshake greeting from the Cergis team",
+  },
+];
 
 const MILESTONES = [
   { year: "2006", title: "Company Established", note: "Cergis Networks is founded in Indonesia." },
@@ -23,18 +35,24 @@ const APPROACH = [
 export default function About() {
   return (
     <div data-testid="about-page">
-      <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-12 lg:pb-24 lg:pt-44">
+      <section className="relative overflow-hidden bg-[#0B132B]">
+        <HeroCarousel slides={HEADER_SLIDES} testId="about-carousel" />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-48">
           <Reveal>
-            <Eyebrow>About Cergis</Eyebrow>
+            <Eyebrow dark>About Cergis</Eyebrow>
           </Reveal>
-          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
             <MaskedLine delay={0.1}>Building Reliable Connectivity</MaskedLine>
             <MaskedLine delay={0.22}>
               for a <span className="text-[#F97316]">Digital Indonesia.</span>
             </MaskedLine>
           </h1>
-          <div className="mt-12 grid gap-12 lg:grid-cols-2">
+        </div>
+      </section>
+
+      <section className="bg-grid-light">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-12 lg:py-24">
+          <div className="grid gap-12 lg:grid-cols-2">
             <Reveal delay={0.3}>
               <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
                 Cergis Networks is an Indonesian Internet Service Provider and
