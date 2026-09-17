@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const SLIDES = [
   {
     src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/rp9bsoay_urban-traffic-with-cityscape.webp",
-    alt: "City traffic and skyline at night — connectivity in motion",
+    alt: "City traffic and skyline at night, connectivity in motion",
   },
   {
     src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/yd3c3wwv_asia-businessmen-businesswomen-meeting-brainstorming-ideas-conducting-business-presentation-project-colleagues-working-together-plan-success-strategy-enjoy-teamwork-small-modern-night-office.webp",

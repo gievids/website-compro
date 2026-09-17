@@ -17,7 +17,7 @@ const SERVICE_OPTIONS = [
   "Other",
 ];
 
-const LOCATION_OPTIONS = ["1", "2–5", "6–10", "11–25", "25+"];
+const LOCATION_OPTIONS = ["1", "2-5", "6-10", "11-25", "25+"];
 
 const EMPTY = {
   name: "",
@@ -31,11 +31,11 @@ const EMPTY = {
 };
 
 const INFO = [
-  { icon: MapPin, label: "Office Address", value: "The Bellezza Shopping Arcade, Permata Hijau — Jakarta" },
+  { icon: MapPin, label: "Office Address", value: "The Bellezza Shopping Arcade, Permata Hijau, Jakarta" },
   { icon: Mail, label: "Email", value: "info@cergis.net.id", href: "mailto:info@cergis.net.id" },
   { icon: Phone, label: "Phone", value: "021 2567 5858", href: "tel:+622125675858" },
   { icon: MessageCircle, label: "WhatsApp", value: "0822 9960 1565", href: "https://wa.me/6282299601565" },
-  { icon: Clock, label: "Business Hours", value: "Monday – Friday, 08.00 – 18.00 WIB" },
+  { icon: Clock, label: "Business Hours", value: "Monday to Friday, 08.00 - 18.00 WIB" },
 ];
 
 const inputCls =
@@ -118,7 +118,7 @@ export default function Contact() {
                   ))}
                 </div>
                 <p className="mt-6 text-sm leading-relaxed text-slate-500">
-                  Based in Jakarta, Indonesia — serving businesses across the
+                  Based in Jakarta, Indonesia, serving businesses across the
                   archipelago.
                 </p>
               </Reveal>
@@ -176,7 +176,7 @@ export default function Contact() {
                     </div>
                     <div className="sm:col-span-2">
                       <label htmlFor="message" className={labelCls}>Message *</label>
-                      <textarea id="message" data-testid="contact-message-input" required rows={5} value={form.message} onChange={set("message")} className={`${inputCls} resize-none`} placeholder="Tell us about your requirements — sites, applications, current setup, timelines." />
+                      <textarea id="message" data-testid="contact-message-input" required rows={5} value={form.message} onChange={set("message")} className={`${inputCls} resize-none`} placeholder="Tell us about your requirements, such as sites, applications, current setup, and timelines." />
                     </div>
                   </div>
 

@@ -44,8 +44,8 @@ const WHY = [
 ];
 
 const CHAPTERS = [
-  { n: "01", t: "Reliability", d: "Every connection we build represents a commitment to reliability — engineered for continuity, monitored without pause." },
-  { n: "02", t: "Responsiveness", d: "When something needs attention, our teams respond — because a network partner should never be the bottleneck." },
+  { n: "01", t: "Reliability", d: "Every connection we build represents a commitment to reliability, engineered for continuity and monitored without pause." },
+  { n: "02", t: "Responsiveness", d: "When something needs attention, our teams respond, because a network partner should never be the bottleneck." },
   { n: "03", t: "Continuous Improvement", d: "Service is never finished. We review, refine, and improve the connections we operate, continuously." },
 ];
 
@@ -68,7 +68,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <Eyebrow dark>Enterprise ISP &amp; Network Infrastructure — Indonesia</Eyebrow>
+              <Eyebrow dark>Enterprise ISP &amp; Network Infrastructure in Indonesia</Eyebrow>
             </motion.div>
             <h1 className="mt-8 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
               <MaskedLine delay={0.12}>Connectivity That</MaskedLine>
@@ -170,7 +170,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="What We Do"
               title="Solutions Built Around Your Business."
-              description="From internet access to enterprise network infrastructure — six core capabilities, one accountable partner."
+              description="Six core capabilities delivered by one accountable partner, from internet access to enterprise network infrastructure."
             />
             <Reveal delay={0.2}>
               <Link

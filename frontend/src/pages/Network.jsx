@@ -30,7 +30,7 @@ const LAYERS = [
   {
     id: "core",
     title: "Cergis Core Network",
-    desc: "Our core network is engineered for enterprise traffic — high availability by design, operated by the engineers who built it.",
+    desc: "Our core network is engineered for enterprise traffic, with high availability by design, and operated by the engineers who built it.",
     tags: ["High-availability design", "Enterprise-grade engineering"],
   },
   {
@@ -42,7 +42,7 @@ const LAYERS = [
   {
     id: "fiber",
     title: "Fiber Backbone",
-    desc: "Fiber infrastructure forms the backbone of the network — the physical foundation for consistent, scalable capacity.",
+    desc: "Fiber infrastructure forms the backbone of the network and provides the physical foundation for consistent, scalable capacity.",
     tags: ["Fiber infrastructure", "Scalable capacity"],
   },
   {
@@ -54,7 +54,7 @@ const LAYERS = [
   {
     id: "edge",
     title: "Branch / Office",
-    desc: "From a single headquarters to distributed branches and offices — one network, every site.",
+    desc: "From a single headquarters to distributed branches and offices, with one network serving every site.",
     tags: ["Multi-site reach", "Consistent service at every location"],
   },
 ];
@@ -87,8 +87,8 @@ export default function Network() {
           </h1>
           <Reveal delay={0.35}>
             <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              A network is not a product sheet. It is an architecture — layered,
-              redundant, and operated by people who answer for it. Explore how
+              A network is not a product sheet. It is a layered, redundant
+              architecture operated by people who answer for it. Explore how
               Cergis connectivity is structured, end to end.
             </p>
           </Reveal>
@@ -177,8 +177,8 @@ export default function Network() {
               </motion.div>
             </AnimatePresence>
             <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400">
-              Conceptual architecture — illustrative, not to scale. Specific network
-              figures available on request.
+              Conceptual architecture, illustrative and not to scale. Specific
+              network figures are available on request.
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function Network() {
             dark
             eyebrow="Network Operations"
             title="Always Connected. Always Monitored."
-            description="Our network infrastructure is continuously monitored to identify performance issues and potential service disruptions — before your business feels them."
+            description="Our network infrastructure is continuously monitored to identify performance issues and potential service disruptions before your business feels them."
           />
           <Reveal delay={0.2}>
             <div className="relative mt-14 overflow-hidden border border-white/10">

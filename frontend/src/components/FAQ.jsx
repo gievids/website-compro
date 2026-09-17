@@ -92,7 +92,7 @@ export default function FAQ() {
                       >
                         <p
                           data-testid={`faq-answer-${i}`}
-                          className="pb-7 pl-9 pr-4 text-sm leading-relaxed text-slate-600 sm:text-base"
+                          className="pb-7 pl-9 pr-4 text-base leading-relaxed text-slate-600"
                         >
                           {f.a}
                         </p>

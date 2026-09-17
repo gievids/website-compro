@@ -40,6 +40,18 @@
     p {
         text-align: justify;
         hyphens: auto;
+        line-height: 1.7;
+    }
+    p.text-sm,
+    p.text-xs,
+    p.font-mono {
+        text-align: left;
+        hyphens: manual;
+    }
+    @media (max-width: 640px) {
+        p {
+            text-align: left;
+        }
     }
 }
 

@@ -73,7 +73,7 @@ export default function About() {
                   className="h-64 w-full object-cover transition-transform duration-700 hover:scale-105 lg:h-72"
                 />
                 <span className="absolute bottom-3 left-3 bg-white/90 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-[#0B132B] backdrop-blur">
-                  Jakarta — Indonesia
+                  Jakarta, Indonesia
                 </span>
               </div>
             </Reveal>
@@ -87,7 +87,7 @@ export default function About() {
           <SectionHeader
             eyebrow="Milestones"
             title="The Road So Far."
-            description="Key stages in the development of Cergis Networks — from establishment to a licensed, enterprise-focused connectivity partner."
+            description="Key stages in the development of Cergis Networks, from establishment to a licensed, enterprise-focused connectivity partner."
           />
           <div className="mt-16 grid gap-x-10 md:grid-cols-2 lg:grid-cols-3">
             {MILESTONES.map((m, i) => (

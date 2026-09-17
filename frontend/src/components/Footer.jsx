@@ -73,7 +73,7 @@ export default function Footer() {
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500">Contact</p>
           <ul className="mt-5 space-y-3 text-sm text-slate-300">
-            <li>The Bellezza Shopping Arcade, Permata Hijau — Jakarta</li>
+            <li>The Bellezza Shopping Arcade, Permata Hijau, Jakarta</li>
             <li>
               <a href="mailto:info@cergis.net.id" className="transition-colors hover:text-[#F97316]">
                 info@cergis.net.id
@@ -84,7 +84,7 @@ export default function Footer() {
                 021 2567 5858
               </a>
             </li>
-            <li>Mon – Fri, 08.00 – 18.00 WIB</li>
+            <li>Mon - Fri, 08.00 - 18.00 WIB</li>
           </ul>
           <Link
             to="/contact"
