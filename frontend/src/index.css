@@ -37,6 +37,10 @@
         background: #f97316;
         color: #fff;
     }
+    p {
+        text-align: justify;
+        hyphens: auto;
+    }
 }
 
 @layer utilities {
