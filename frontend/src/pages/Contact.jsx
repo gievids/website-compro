@@ -3,7 +3,19 @@ import axios from "axios";
 import { toast } from "sonner";
 import { ArrowRight, Loader2, MapPin, Mail, Phone, MessageCircle, Clock } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import FAQ from "@/components/FAQ";
+
+const HEADER_SLIDES = [
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/w6a9hs29_portrait-beautiful-young-asian-business-woman-with-headphone-call-center.webp",
+    alt: "Cergis customer support specialist ready to help",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/1ceap9r4_paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline.webp",
+    alt: "Customer service team assisting clients at their desks",
+  },
+];
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -66,22 +78,31 @@ export default function Contact() {
   return (
     <div data-testid="contact-page">
       <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-44">
-          <Reveal>
-            <Eyebrow>Contact</Eyebrow>
-          </Reveal>
-          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            <MaskedLine delay={0.1}>Let's Build a</MaskedLine>
-            <MaskedLine delay={0.22}>
-              <span className="text-[#F97316]">Better Connection.</span>
-            </MaskedLine>
-          </h1>
-          <Reveal delay={0.35}>
-            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Tell us about your connectivity and network requirements. Our team
-              will respond with a solution shaped around your business.
-            </p>
-          </Reveal>
+        <div className="mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-28 lg:pt-40">
+          <div className="grid items-center gap-14 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <Reveal>
+                <Eyebrow>Contact</Eyebrow>
+              </Reveal>
+              <h1 className="mt-8 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                <MaskedLine delay={0.1}>Let's Build a</MaskedLine>
+                <MaskedLine delay={0.22}>
+                  <span className="text-[#F97316]">Better Connection.</span>
+                </MaskedLine>
+              </h1>
+              <Reveal delay={0.35}>
+                <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+                  Tell us about your connectivity and network requirements. Our team
+                  will respond with a solution shaped around your business.
+                </p>
+              </Reveal>
+            </div>
+            <div className="lg:col-span-5">
+              <Reveal delay={0.4}>
+                <HeroCarousel slides={HEADER_SLIDES} testId="contact-carousel" contained />
+              </Reveal>
+            </div>
+          </div>
 
           <div className="mt-16 grid gap-14 lg:grid-cols-12">
             {/* INFO */}
