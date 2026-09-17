@@ -2,7 +2,23 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, Activity, BellRing, Wrench, LifeBuoy, Gauge } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import CTASection from "@/components/CTASection";
+
+const HEADER_SLIDES = [
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/w2mnzzva_large-buildings-with-dome-lights.webp",
+    alt: "City skyline connected by network links at night",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/4xmkdx75_developer-coworker-overseeing-data-center.webp",
+    alt: "Engineer overseeing data center operations",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/qrw3up4g_close-up-coding-software-tablet-server-room.webp",
+    alt: "Network operations workstations in a server room",
+  },
+];
 
 const LAYERS = [
   {
@@ -57,19 +73,20 @@ export default function Network() {
 
   return (
     <div data-testid="network-page">
-      <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-12 lg:pb-24 lg:pt-44">
+      <section className="relative overflow-hidden bg-[#0B132B]">
+        <HeroCarousel slides={HEADER_SLIDES} testId="network-carousel" />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-48">
           <Reveal>
-            <Eyebrow>Our Network</Eyebrow>
+            <Eyebrow dark>Our Network</Eyebrow>
           </Reveal>
-          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
             <MaskedLine delay={0.1}>Built for</MaskedLine>
             <MaskedLine delay={0.22}>
               <span className="text-[#F97316]">Reliability.</span>
             </MaskedLine>
           </h1>
           <Reveal delay={0.35}>
-            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
               A network is not a product sheet. It is an architecture — layered,
               redundant, and operated by people who answer for it. Explore how
               Cergis connectivity is structured, end to end.

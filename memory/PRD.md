@@ -12,7 +12,7 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 ## Architecture
 - Frontend: React 19 + react-router-dom 7, Tailwind, framer-motion 11, lenis, sonner, lucide-react
   - Pages: / (Home), /solutions, /network, /about, /contact
-  - Components: Navbar, Footer, Reveal/MaskedLine/SectionHeader/Eyebrow, HeroCarousel (reusable: Home hero 4 slides + Solutions header 2 slides), Marquee, CTASection, SolutionCard, FAQ; data/solutions.js
+  - Components: Navbar, Footer, Reveal/MaskedLine/SectionHeader/Eyebrow, HeroCarousel (reusable: Home hero 4 slides, Solutions header 2 slides, Network header 3 slides), Marquee, CTASection, SolutionCard, FAQ; data/solutions.js
   - Fonts: Plus Jakarta Sans (display), Inter (body), JetBrains Mono (labels)
 - Backend: FastAPI, MongoDB (motor)
   - GET /api/ — health
