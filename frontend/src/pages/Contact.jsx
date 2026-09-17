@@ -3,6 +3,7 @@ import axios from "axios";
 import { toast } from "sonner";
 import { ArrowRight, Loader2, MapPin, Mail, Phone, MessageCircle, Clock } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow } from "@/components/Reveal";
+import FAQ from "@/components/FAQ";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -203,6 +204,8 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <FAQ />
     </div>
   );
 }
