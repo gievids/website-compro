@@ -14,6 +14,7 @@ import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal"
 import HeroCarousel from "@/components/HeroCarousel";
 import Marquee from "@/components/Marquee";
 import CTASection from "@/components/CTASection";
+import FAQ from "@/components/FAQ";
 import SolutionCard from "@/components/SolutionCard";
 import { SOLUTIONS } from "@/data/solutions";
 
@@ -271,6 +272,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FAQ />
 
       <CTASection />
     </div>
