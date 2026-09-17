@@ -28,12 +28,13 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 - Editorial marquee, numbered manifesto chapters, dark "Service is a Promise." signature section
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section
 - Interactive FAQ accordion (8 company-provided Q&As) on the homepage before the final CTA and on the Contact page below the form
+- Industries page (/industries): intro copy + 11 sector cards (Banking & Trading, Mining, E-Commerce, IT Solution, Call Center, Software Development, Media & Entertainment, FMCG, F&B, Hospitality, Education Institution) + orange CTA card; added to navbar and footer
 - About page with real company timeline (2006 founding → 2011 ISP license → 2024 Jartaplok license → Present) and values grid
 - Contact form → MongoDB + email notification (verified end-to-end, toast confirmation)
 - SEO title/meta per brief; no invented statistics anywhere (99.5% SLA on Internet Service is company-provided/verified)
 
 ## Backlog
-- P1: Industries page; Case Studies
+- P1: Case Studies
 - P2: Insights/Blog, Customer Portal, CMS, Careers, Knowledge Center (Phase 2 per brief)
 
 ## Next Tasks

@@ -5,6 +5,7 @@ const PAGES = [
   { to: "/", label: "Home" },
   { to: "/solutions", label: "Solutions" },
   { to: "/network", label: "Network" },
+  { to: "/industries", label: "Industries" },
   { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact" },
 ];
