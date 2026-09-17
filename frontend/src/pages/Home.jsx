@@ -11,7 +11,6 @@ import {
   Users,
 } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal";
-import NetworkViz from "@/components/NetworkViz";
 import Marquee from "@/components/Marquee";
 import CTASection from "@/components/CTASection";
 import SolutionCard from "@/components/SolutionCard";
@@ -51,15 +50,29 @@ const CHAPTERS = [
 export default function Home() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
-  const vizY = useTransform(scrollYProgress, [0, 1], [0, 90]);
+  const bgY = useTransform(scrollYProgress, [0, 1], [0, 120]);
 
   return (
     <div data-testid="home-page">
       {/* HERO */}
       <section ref={heroRef} className="relative overflow-hidden bg-grid-light">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#FAFAFC] to-transparent" />
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-6 pb-20 pt-32 lg:grid-cols-12 lg:px-12 lg:pb-28 lg:pt-44">
-          <div className="lg:col-span-6">
+        <motion.svg
+          style={{ y: bgY }}
+          className="pointer-events-none absolute inset-0 h-full w-full"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 700"
+          aria-hidden="true"
+        >
+          <path d="M -50 180 C 320 120, 760 260, 1500 150" fill="none" stroke="#F97316" strokeWidth="1" opacity="0.35" className="flow-line-slow" />
+          <path d="M -50 520 C 380 580, 820 460, 1500 560" fill="none" stroke="#F97316" strokeWidth="1" opacity="0.22" className="flow-line-slow" />
+          <path d="M -50 350 C 350 310, 800 410, 1500 330" fill="none" stroke="#CBD5E1" strokeWidth="1" opacity="0.8" className="flow-line-slow" />
+          <circle cx="1180" cy="180" r="4" fill="#F97316" className="node-breathe" />
+          <circle cx="240" cy="520" r="4" fill="#F97316" className="node-breathe" />
+          <circle cx="760" cy="330" r="3" fill="#94A3B8" className="node-breathe" />
+        </motion.svg>
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-36 lg:px-12 lg:pb-32 lg:pt-52">
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -106,9 +119,6 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
-          <motion.div style={{ y: vizY }} className="lg:col-span-6">
-            <NetworkViz />
-          </motion.div>
         </div>
         <div className="relative border-t border-slate-200 bg-white/70 backdrop-blur">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-10 gap-y-3 px-6 py-5 lg:px-12">
