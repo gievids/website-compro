@@ -1,25 +1,38 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import CTASection from "@/components/CTASection";
 import { SOLUTIONS } from "@/data/solutions";
+
+const HEADER_SLIDES = [
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/tctj5jy9_global-communication-equipment-futuristic-server-room-generated-by-ai.webp",
+    alt: "Data center server corridor",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/trwwwq8t_paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline.webp",
+    alt: "Customer service and technical support operations",
+  },
+];
 
 export default function Solutions() {
   return (
     <div data-testid="solutions-page">
-      <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-12 lg:pb-28 lg:pt-44">
+      <section className="relative overflow-hidden bg-[#0B132B]">
+        <HeroCarousel slides={HEADER_SLIDES} testId="solutions-carousel" />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-48">
           <Reveal>
-            <Eyebrow>Solutions</Eyebrow>
+            <Eyebrow dark>Solutions</Eyebrow>
           </Reveal>
-          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
             <MaskedLine delay={0.1}>Connectivity Solutions</MaskedLine>
             <MaskedLine delay={0.22}>
               for <span className="text-[#F97316]">Modern Business</span>
             </MaskedLine>
           </h1>
           <Reveal delay={0.35}>
-            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
               From internet access to enterprise network infrastructure, Cergis
               Networks provides solutions designed around your business requirements.
             </p>
@@ -31,7 +44,7 @@ export default function Solutions() {
                   key={s.slug}
                   href={`#${s.slug}`}
                   data-testid={`solutions-chip-${s.slug}`}
-                  className="border border-slate-300 bg-white px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-slate-600 transition-colors duration-200 hover:border-[#F97316] hover:text-orange-600"
+                  className="border border-white/25 bg-white/5 px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-slate-300 backdrop-blur transition-colors duration-200 hover:border-[#F97316] hover:text-orange-500"
                 >
                   <span className="mr-2 text-orange-500">0{i + 1}</span>
                   {s.title}

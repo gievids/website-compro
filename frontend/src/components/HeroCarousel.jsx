@@ -22,16 +22,16 @@ const SLIDES = [
 
 const DURATION = 6000;
 
-export default function HeroCarousel() {
+export default function HeroCarousel({ slides = SLIDES, testId = "hero-carousel" }) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const t = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), DURATION);
+    const t = setInterval(() => setIndex((i) => (i + 1) % slides.length), DURATION);
     return () => clearInterval(t);
-  }, []);
+  }, [slides.length]);
 
   return (
-    <div data-testid="hero-carousel" className="absolute inset-0 overflow-hidden">
+    <div data-testid={testId} className="absolute inset-0 overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={index}
@@ -42,8 +42,8 @@ export default function HeroCarousel() {
           transition={{ opacity: { duration: 1.4 }, scale: { duration: DURATION / 1000 + 2, ease: "linear" } }}
         >
           <img
-            src={SLIDES[index].src}
-            alt={SLIDES[index].alt}
+            src={slides[index].src}
+            alt={slides[index].alt}
             className="h-full w-full object-cover"
             loading={index === 0 ? "eager" : "lazy"}
           />
@@ -54,10 +54,10 @@ export default function HeroCarousel() {
       <div className="absolute inset-0 bg-grid-dark opacity-50" />
 
       <div className="absolute right-5 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-2.5 lg:right-10">
-        {SLIDES.map((s, i) => (
+        {slides.map((s, i) => (
           <button
             key={s.src}
-            data-testid={`hero-carousel-dot-${i}`}
+            data-testid={`${testId}-dot-${i}`}
             onClick={() => setIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
             className="relative h-10 w-1 overflow-hidden bg-white/25"
