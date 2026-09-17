@@ -14,7 +14,27 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { Reveal, MaskedLine, Eyebrow, SectionHeader } from "@/components/Reveal";
+import HeroCarousel from "@/components/HeroCarousel";
 import CTASection from "@/components/CTASection";
+
+const HEADER_SLIDES = [
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/i9fslgb0_screen-with-graph-it-that-says-word-financial-it.webp",
+    alt: "Financial trading screens over a city skyline",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/8t54sk4o_low-angle-view-happy-warehouse-workers-communicating-while-working-with-shipment-industrial-storage-compartment.webp",
+    alt: "Warehouse team coordinating shipments",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/krjgg91m_aerial-view-factory-trucks-parked-near-warehouse-daytime.webp",
+    alt: "Aerial view of a logistics and factory complex",
+  },
+  {
+    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/o8kkx7ks_high-angle-students-learning-library.webp",
+    alt: "Students learning in a campus library",
+  },
+];
 
 const INDUSTRIES = [
   { icon: Landmark, title: "Banking & Trading", desc: "Reliable, continuously monitored connectivity for transactions and business-critical financial operations." },
@@ -33,19 +53,20 @@ const INDUSTRIES = [
 export default function Industries() {
   return (
     <div data-testid="industries-page">
-      <section className="relative overflow-hidden bg-grid-light">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-12 lg:pb-24 lg:pt-44">
+      <section className="relative overflow-hidden bg-[#0B132B]">
+        <HeroCarousel slides={HEADER_SLIDES} testId="industries-carousel" />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-32 lg:px-12 lg:pb-32 lg:pt-48">
           <Reveal>
-            <Eyebrow>Industries</Eyebrow>
+            <Eyebrow dark>Industries</Eyebrow>
           </Reveal>
-          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-8 max-w-4xl font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-5xl lg:text-6xl">
             <MaskedLine delay={0.1}>Industry Solutions</MaskedLine>
             <MaskedLine delay={0.22}>
               Built Around <span className="text-[#F97316]">Your World.</span>
             </MaskedLine>
           </h1>
           <Reveal delay={0.35}>
-            <p className="mt-7 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            <p className="mt-7 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
               We deliver professional and integrated solutions tailored to address
               the unique challenges and operational requirements across various
               industries. Our expertise enables us to understand industry-specific
