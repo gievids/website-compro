@@ -4,11 +4,11 @@ import CTASection from "@/components/CTASection";
 
 const HEADER_SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/lnjry0xf_business-colleagues-rooftop-talking.webp",
+    src: "/images/business-colleagues-rooftop-talking.webp",
     alt: "Business team in silhouette against the city skyline",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/i79m2h5x_image-confident-asian-woman-smiling-extend-hand-handshake-greeting-gesture-saying-hello-standing-white-background.webp",
+    src: "/images/image-confident-asian-woman-smiling-extend-hand-handshake-gr.webp",
     alt: "A warm handshake greeting from the Cergis team",
   },
 ];

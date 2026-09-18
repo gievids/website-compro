@@ -24,6 +24,7 @@ Redesign and rebuild the corporate website for Cergis Networks, an Indonesian IS
 
 ## Implemented (2026-09-16)
 - All 5 pages, fully responsive, sticky glass navbar + mobile full-screen menu
+- All 16 carousel/page photos are self-hosted in frontend/public/images/ (no external customer-assets URLs remain); source zip available at /cergis-website-source.zip; user pushes to GitHub repo "website-compro" manually
 - Kinetic hero: full-screen image carousel (4 client-provided photos) with crossfade + Ken Burns zoom, vertical progress indicators, navy gradient scrim, masked line reveal, scroll parallax, highlight strip
 - Editorial marquee, numbered manifesto chapters, dark "Service is a Promise." signature section
 - Interactive network architecture explorer (6 clickable layers + detail panel), NOC operations section

@@ -3,19 +3,19 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/rp9bsoay_urban-traffic-with-cityscape.webp",
+    src: "/images/urban-traffic-with-cityscape.webp",
     alt: "City traffic and skyline at night, connectivity in motion",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/yd3c3wwv_asia-businessmen-businesswomen-meeting-brainstorming-ideas-conducting-business-presentation-project-colleagues-working-together-plan-success-strategy-enjoy-teamwork-small-modern-night-office.webp",
+    src: "/images/asia-businessmen-businesswomen-meeting-brainstorming-ideas-c.webp",
     alt: "Business team reviewing network performance together",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/qmjff830_vertical-shot-asian-girl-student-attend-online-meeting-talking-laptop-video-chat-sitting.webp",
+    src: "/images/vertical-shot-asian-girl-student-attend-online-meeting-talki.webp",
     alt: "Professional on a video call, connected from anywhere",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/jgmab9cp_portrait-creative-young-woman-drawing-digital-tablet-with-pen-drinking-coffee-working-from.webp",
+    src: "/images/portrait-creative-young-woman-drawing-digital-tablet-with-pe.webp",
     alt: "Working flexibly on a digital tablet over reliable connectivity",
   },
 ];

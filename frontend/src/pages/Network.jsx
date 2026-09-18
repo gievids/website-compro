@@ -7,15 +7,15 @@ import CTASection from "@/components/CTASection";
 
 const HEADER_SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/w2mnzzva_large-buildings-with-dome-lights.webp",
+    src: "/images/large-buildings-with-dome-lights.webp",
     alt: "City skyline connected by network links at night",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/4xmkdx75_developer-coworker-overseeing-data-center.webp",
+    src: "/images/developer-coworker-overseeing-data-center.webp",
     alt: "Engineer overseeing data center operations",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/qrw3up4g_close-up-coding-software-tablet-server-room.webp",
+    src: "/images/close-up-coding-software-tablet-server-room.webp",
     alt: "Network operations workstations in a server room",
   },
 ];

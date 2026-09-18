@@ -7,11 +7,11 @@ import { SOLUTIONS } from "@/data/solutions";
 
 const HEADER_SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/tctj5jy9_global-communication-equipment-futuristic-server-room-generated-by-ai.webp",
+    src: "/images/global-communication-equipment-futuristic-server-room-genera.webp",
     alt: "Data center server corridor",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/trwwwq8t_paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline.webp",
+    src: "/images/paralyzed-asian-employee-working-call-center-reception-disab.webp",
     alt: "Customer service and technical support operations",
   },
 ];

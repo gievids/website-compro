@@ -8,12 +8,12 @@ import FAQ from "@/components/FAQ";
 
 const HEADER_SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/w6a9hs29_portrait-beautiful-young-asian-business-woman-with-headphone-call-center.webp",
+    src: "/images/portrait-beautiful-young-asian-business-woman-with-headphone.webp",
     alt: "Cergis customer support specialist ready to help",
     pos: "center 15%",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/1ceap9r4_paralyzed-asian-employee-working-call-center-reception-disability-friendly-office-female-operator-wheelchair-user-with-impairment-giving-assistance-customer-service-helpline.webp",
+    src: "/images/paralyzed-asian-employee-working-call-center-reception-disab.webp",
     alt: "Customer service team assisting clients at their desks",
   },
 ];

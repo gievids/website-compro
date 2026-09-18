@@ -19,19 +19,19 @@ import CTASection from "@/components/CTASection";
 
 const HEADER_SLIDES = [
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/i9fslgb0_screen-with-graph-it-that-says-word-financial-it.webp",
+    src: "/images/screen-with-graph-it-that-says-word-financial-it.webp",
     alt: "Financial trading screens over a city skyline",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/8t54sk4o_low-angle-view-happy-warehouse-workers-communicating-while-working-with-shipment-industrial-storage-compartment.webp",
+    src: "/images/low-angle-view-happy-warehouse-workers-communicating-while-w.webp",
     alt: "Warehouse team coordinating shipments",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/krjgg91m_aerial-view-factory-trucks-parked-near-warehouse-daytime.webp",
+    src: "/images/aerial-view-factory-trucks-parked-near-warehouse-daytime.webp",
     alt: "Aerial view of a logistics and factory complex",
   },
   {
-    src: "https://customer-assets-4nw71qhi.emergentagent.net/job_site-launch-411/artifacts/o8kkx7ks_high-angle-students-learning-library.webp",
+    src: "/images/high-angle-students-learning-library.webp",
     alt: "Students learning in a campus library",
   },
 ];
